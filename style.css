@@ -69,10 +69,14 @@
     align-items: center;
     flex-direction: column;
     width: 350px;
-    border-radius: 0.5rem;
+   
+    padding: 20px;
     
-    flex: 1;
-    min-height: 100dvh;
+  }
+  .container{
+    border-radius: 1rem;
+    overflow: hidden;
+    
   }
   .second-card{
     display: flex;
@@ -81,6 +85,7 @@
     flex-direction: column;
     padding: 2rem;
     flex: 2;
+    
   }
   .second-card> img, p, h1, button{
     margin-bottom: 3rem;
@@ -93,7 +98,7 @@
     text-transform: uppercase;
 }
 .second-card> h1, p{
-    color:var(--Very-light-gray);
+    color:var(--Transparent-white);
 }
 .second-card>p {
     font-size: 0.9;
@@ -101,12 +106,26 @@
 }
 .sedan-card{
     background-color: var(--Bright-orange);
+   
 }
+.sedan-card> button{
+    color: var(--Bright-orange);
+   
+}
+
 .suv-card{
     background-color: var(--Dark-cyan) ;
+}.suv-card > button{
+  color: var(--Dark-cyan)
 }
+
 .luxury-card{
     background-color: var(--Very-dark-cyan) ;    
+   
+}
+.luxury-card> button{
+    color: var(--Very-dark-cyan) ;    
+   
 }
 .button{
     display: flex;
@@ -119,7 +138,7 @@
     border: none;
 }
 @media (min-width: 750px){
-    .card{
+    .container{
         display: flex;
         justify-content: center;
         align-items: center;
