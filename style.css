@@ -137,7 +137,13 @@
     padding-right: 2rem;
     border: none;
 }
-@media (min-width: 750px){
+.button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+@media (min-width: 720px){
     .container{
         display: flex;
         justify-content: center;
